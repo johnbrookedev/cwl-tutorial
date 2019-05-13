@@ -1,0 +1,9 @@
+Notes files
+
+(1) install docker: apt install docker
+(2) install virtualenv for cwl installation: apt install
+(3) install cwltool: https://github.com/common-workflow-language/cwltool
+(4) generate Docker repository:  docker build --tag=andrewjesaitis/snpeff .
+    - you can see docker images using the command: <docker image ls>
+(5) run the cwltool for the tutorial pipeline:
+      <cwltool --tmp-outdir-prefix=/path/to/cwl/tutorials/by/jesaitis --tmpdir-prefix=/path/to/cwl/tutorials/by/jesaitis snpeff-workflow.cwl 1kg-job.yml>
